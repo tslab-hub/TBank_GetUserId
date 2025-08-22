@@ -1,7 +1,7 @@
 ﻿<Window x:Class="TBank_GetUserId.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Т-Банк. Узнать UserId" Height="200" Width="600" 
+        Title="T-Инвестиции. Узнать UserId" Height="200" Width="600" 
         WindowStyle="ToolWindow"
         WindowStartupLocation="CenterScreen">
     <Grid Margin="0,10,0,0">
