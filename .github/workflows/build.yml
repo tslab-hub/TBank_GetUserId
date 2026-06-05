@@ -4,8 +4,6 @@ on:
   push:
     tags:
       - 'v*'
-    branches:
-      - master
 
 permissions:
   contents: write
@@ -47,21 +45,5 @@ jobs:
           - Built with .NET 8 (self-contained single file)
         draft: false
         prerelease: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Release latest build on master push
-      if: github.ref == 'refs/heads/master'
-      uses: softprops/action-gh-release@v2
-      with:
-        tag_name: latest
-        name: Latest build
-        files: ./publish/TBank_GetUserId.exe
-        body: |
-          Latest automated build from master.
-          - Commit: ${{ github.sha }}
-          - Built with .NET 8 (self-contained single file)
-        draft: false
-        prerelease: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

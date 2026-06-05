@@ -33,7 +33,7 @@ namespace TBank_GetUserId
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Post,
-                RequestUri = new Uri("https://invest-public-api.tbank.ru/rest/tinkoff.public.invest.api.contract.v1.UsersService/GetInfo"),
+                RequestUri = new Uri("https://invest-public-api.tinkoff.ru/rest/tinkoff.public.invest.api.contract.v1.UsersService/GetInfo"),
                 Content = new StringContent("{}", Encoding.UTF8, "application/json")
             };
 
